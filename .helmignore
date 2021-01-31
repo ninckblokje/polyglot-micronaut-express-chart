@@ -21,3 +21,7 @@
 .idea/
 *.tmproj
 .vscode/
+# other
+myvalues.yaml
+README.md
+index.yaml
