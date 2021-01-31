@@ -3,12 +3,22 @@ entries:
   polyglot-micronaut-express-chart:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2021-01-31T12:47:07.9899994+01:00"
+    created: "2021-01-31T14:18:58.1239299+01:00"
     description: A Helm chart for polyglot-micronaut-express
-    digest: 7919027a83f9ca941a969a83f855ed3522c646299cc03f3d5941d37ce69b5b4d
+    digest: 27360b24d238b2966c0bdc1f5d64db8bf5e4d4f180dd261dd365427fd82898f6
+    name: polyglot-micronaut-express-chart
+    type: application
+    urls:
+    - https://ninckblokje.github.io/polyglot-micronaut-express-chart/polyglot-micronaut-express-chart-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2021-01-31T14:18:58.1239299+01:00"
+    description: A Helm chart for polyglot-micronaut-express
+    digest: 338060a1d591f712bdf9f323b4da789e2cf7d993c3573f432f44b9e3b28d9980
     name: polyglot-micronaut-express-chart
     type: application
     urls:
     - https://ninckblokje.github.io/polyglot-micronaut-express-chart/polyglot-micronaut-express-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2021-01-31T12:47:07.9869988+01:00"
+generated: "2021-01-31T14:18:58.1229273+01:00"
