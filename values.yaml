@@ -7,3 +7,10 @@ pme:
     password: ""
     url: "jdbc:postgresql://localhost:5432/postgres"
     user: ""
+
+azure:
+  secretFromKeyvault: false
+  keyvaultName: ""
+  resourceGroup: ""
+  subscriptionId: ""
+  tenantId: ""

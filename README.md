@@ -2,7 +2,15 @@
 
 A Helm chart for [polyglot-micronaut-express](https://github.com/ninckblokje/polyglot-micronaut-express), container images can be foud in [Docker hub](https://hub.docker.com/repository/docker/ninckblokje/polyglot-micronaut-express).
 
-Possible variables:
+This chart will deploy the following:
+- Configmap
+- Secret
+- Deployment
+- Service
+
+## Configuration
+
+Provide the following as basic configuration:
 
 ````yaml
 pme:
@@ -13,13 +21,19 @@ pme:
     username: ""
 ````
 
-This chart will deploy the following:
-- Configmap
-- Secret
-- Deployment
-- Service
+It is possible to use [Azure Key Vault Provider]() for Azure Keyvault integration, by specifying the following additional configuration:
 
-Handy commands:
+````yaml
+azure:
+  secretFromKeyvault: true
+  keyvaultName: ""
+  resourceGroup: ""
+  subscriptionId: ""
+  tenantId: ""
+````
+
+## Commands
+
 ````
 helm install [RELEASE_NAME] . -f myvalues.yaml
 helm install --dry-run [RELEASE_NAME] . -f myvalues.yaml
@@ -28,7 +42,8 @@ helm uninstall [RELEASE_NAME]
 helm get manifest [RELEASE_NAME]
 ````
 
-Packaging:
+## Packaging
+
 ````
 helm lint .
 helm package .
