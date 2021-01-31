@@ -27,3 +27,10 @@ helm upgrade [RELEASE_NAME] . -f myvalues.yaml
 helm uninstall [RELEASE_NAME]
 helm get manifest [RELEASE_NAME]
 ````
+
+Packaging:
+````
+helm lint .
+helm package .
+helm repo index --url https://ninckblokje.github.io/polyglot-micronaut-express-chart/ .
+````
