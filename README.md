@@ -18,3 +18,12 @@ This chart will deploy the following:
 - Secret
 - Deployment
 - Service
+
+Handy commands:
+````
+helm install [RELEASE_NAME] . -f myvalues.yaml
+helm install --dry-run [RELEASE_NAME] . -f myvalues.yaml
+helm upgrade [RELEASE_NAME] . -f myvalues.yaml
+helm uninstall [RELEASE_NAME]
+helm get manifest [RELEASE_NAME]
+````
