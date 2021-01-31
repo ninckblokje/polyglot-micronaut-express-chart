@@ -1,0 +1,9 @@
+image: "ninckblokje/polyglot-micronaut-express:1.0.1"
+replicaCount: 1
+
+pme:
+  jdbc:
+    driver: "org.postgresql.Driver"
+    password: ""
+    url: "jdbc:postgresql://localhost:5432/postgres"
+    user: ""
